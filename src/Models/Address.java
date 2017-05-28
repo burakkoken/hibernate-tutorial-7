@@ -1,5 +1,6 @@
 package Models;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 /**
@@ -8,7 +9,9 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Address {
 
+    @Column(name = "streetName")
     private String street;
+    @Column(name = "cityName")
     private String city;
 
     public Address(){
